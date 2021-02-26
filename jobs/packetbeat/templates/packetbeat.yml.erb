@@ -527,6 +527,15 @@ fields:
 #- add_cloud_metadata:
 #
 
+processors:
+  - add_cloudfoundry_metadata:
+      api_address: <%= p('cloudfoundry.api') %>
+      client_id: <%= p('cloudfoundry.client_id') %>
+      client_secret: <%= p('cloudfoundry.client_secret') %>
+      ssl:
+        verification_mode: none
+
+
 #================================ Outputs ======================================
 
 # Configure what outputs to use when sending the data collected by the beat.
