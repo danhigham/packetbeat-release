@@ -1,6 +1,6 @@
 set -e
 
-PACKETBEAT_VERSION=7.11
+PACKETBEAT_VERSION=7.11.1
 
 tar -xvf packetbeat/packetbeat-${PACKETBEAT_VERSION}-linux-x86_64.tar.gz
 cp -a packetbeat-${PACKETBEAT_VERSION}-linux-x86_64/* ${BOSH_INSTALL_TARGET}
